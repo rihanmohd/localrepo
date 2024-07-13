@@ -1,31 +1,330 @@
+ :rot{
+	--box-shadow:0 1px 3px rgba(0, 0, 0, 0.12),
+	0 1px 2px rgba(0, 0, 0, 0.24);
+ }
+
+ *{
+	box-sizing: border-box;
+
+ }
+body{
+  background-color: #e8e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 
 
+}
 
-body {
+.container{
+	margin: 30px auto;
+	width: 350px;
+
+}
+
+h1{
+	latter-spacing: 1px;
+	margin: 0;
+
+}
+ 
+h3{
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 10px;
+	margin: 40px 0 10px;
+
+}
+ h4{
+	margin: 0;
+	text-transform: uppercase;
+
+ }
+
+ .inc-exp-container{
+	background-color: hsl(0, 17%, 98%);
+	box-shadow: var(--box-shadow);
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+ }
+
+ .inc-exp-container > div{
+  flex:1;
+  text-align: center;
+
+ }
+
+ .inc-exp-container > div:first-of-type{
+	border-right: 1px solid black;
+
+ }
+ 
+ .money{
+	font-size: 2;
+	letter-spacing: 1px;
+	margin: 5px 0;
+
+ }
+
+ .money-plus{
+	color: #2ecc71;
+
+ }
+ 
+ .money-minus{
+	color: #c0392b;
+
+ }
+ 
+ label{
+	display: inline-block;
+	margin: 10px 0;
+
+ }
+
+ input[type="text"],input[type="number"]{
+	border: 1px solid #dedede;
+	border-radius: 2px;
+	display:block;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+
+ }
+ 
+ .btn{
+	cursor: pointer;
+	background-color: #9c88ff;
+	box-shadow: var(--box-shadow);
+	columns: #fff;
+	border: 0;
+	display: block;
+	font-size: 16px;
+	margin: 10px 0 30px;
+	padding: 10px;
+	width: 100%;
+
+ }
+
+ .btn:focus,.delete-btn:focus{
+	outline: 0;
+
+ }
+
+ .list{
+   list-style-type: none;
+   padding: 0;
+   margin-bottom: 40px;
+
+ }
+ .list li{
+	background-color:#f9f8f8 ;
+	box-shadow: var(--box-shadow);
+	color: #333;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 10px;
+	margin: 10px 0;
+
+
+ }
+
+ .list li.plus{
+	border-right: 5px solid #2ecc71;
+
+ }
+
+ .list li.minus{
+	border-right: 5px solid #c0392b;
+
+ }
+
+ .delete-btn{
+	cursor: pointer;
+	background-color: #e74c3c;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 2px 5px;
+	position:absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-100%,-50%);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+
+ }
+
+ .list li:hover .delete-btn{
+	opacity:1;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* h1, h7{
     display: flex;
     justify-content: center;
-    text-align: center;
- box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(28, 244, 229);
 }
 
-div {
-    gap: 8px;
+input{
+  margin-left:auto;
+  height: 30px;
+  width: 600px;
+  border: none;
+  outline: none;
     
-
 }
+label{
+	margin-right: 0;
+	margin-left:500px;
+}
+ #container{
+	align-items: center;
+	flex-direction:column;
+    padding: 30px;
+	
 
-
+ }
+ .dateDiv{
+	margin-bottom:37px;
+ }
 .btn{
-    height: 20px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 60px;
-    margin-left: 5px;
-background-color: brown;
-color: aliceblue;
-    
+	color: white;
+	background-color: red;
+	border-radius: 5px;
+	border: none;
+   height: 30;
+   margin-left: 800px;
+}
+.lastDiv{
+	color: black;
+	background-color: white;
+	height:35px;
+	width: 600px;
+	text-align: center;
+  margin-left: 550px;
+  margin-top: 20px;
 }
 
+ 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+
+section {
+	background-color: #fff;
+	padding: 1em;
+	margin-bottom: 2em;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	margin-bottom: 0.5em;
+}
+
+input, select, textarea {
+	margin-bottom: 1em;
+	padding: 0.5em;
+	border: none;
+	border-radius: 5px;
+}
+
+button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 0.5em 1em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+#expense-list {
+	margin-top: 2em;
+}
+
+#expenses {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#expenses li {
+	padding: 0.5em;
+	border-bottom: 1px solid #ccc;
+}
+
+#expenses li:last-child {
+	border-bottom: none;
+}
+
+#category-filter {
+	margin-top: 2em;
+}
+
+#total-expense {
+	margin-top: 2em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#chart {
+	margin-top: 2em;
+}
+
+#expense-chart {
+	width: 100%;
+	height: 300px;
+} */ 
