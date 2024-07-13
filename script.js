@@ -1,18 +1,59 @@
-const date = document.getElementById('date');
-const day = document.getElementById('day');
-const month = document.getElementById('month');
-const year = document.getElementById('year');
+// Calling showTime function at every second
+setInterval(showTime, 1000);
 
+// Defining showTime funcion
 
-const today = new Date();
+function showTime() {
 
+    // Getting current time and date
 
-const weekdays = ["sunday", "Monday", "Tuesday", "Wedensday", "Theresday", "Friday", "Saturday"];
+    let time = new Date();
 
-const allMonths = ["january", "February", "March", "April", "May", "June", "July", "Agust", "September", "Octuber", "November", "Desember"
-];
+    let hour = time.getHours();
 
-date.innerHTML = (today.getDate()<10?"0":"") + today.getDate();
-day.innerHTML = weekdays[today.getDay()];
-month.innerHTML = allMonths[today.getMonth()];
-year.innerHTML = today.getFullYear();
+    let min = time.getMinutes();
+
+    let sec = time.getSeconds();
+
+    am_pm = "AM";
+ 
+
+    // Setting time for 12 Hrs format
+
+    if (hour >= 12) {
+
+        if (hour > 12) hour -= 12;
+
+        am_pm = "PM";
+
+    } else if (hour == 0) {
+
+        hr = 12;
+
+        am_pm = "AM";
+
+    }
+ 
+
+    hour =
+
+        hour < 10 ? "0" + hour : hour;
+
+    min = min < 10 ? "0" + min : min;
+
+    sec = sec < 10 ? "0" + sec : sec;
+ 
+
+    let currentTime =
+
+        hour + ":" +
+
+        min + ":" + sec + am_pm;
+ 
+
+    // Displaying the time
+
+    document.getElementById("clock").innerHTML = currentTime;
+}
+ 
+showTime();
