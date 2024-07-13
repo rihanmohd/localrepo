@@ -3,57 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz app</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
-    <div class="quiz-container">
-
-        <h2 id="quiz-question">
-            Question tag
-        </h2>
-
-        <ul>
-
-            <li>
-                <input type="radio" class="answer" id="option-a" name="quiz-options">
-                <label for="option-a" id="text_option_a"> Option A</label>
-            </li>
-            <li>
-                <input type="radio" class="answer" id="option-b" name="quiz-options">
-                <label for="option-b" id="text_option_b"> Option B</label>
-            </li>
-            <li>
-                <input type="radio" class="answer" id="option-c" name="quiz-options">
-                <label for="option-c" id="text_option_c"> Option C</label>
-            </li>
-            <li>
-                <input type="radio" class="answer" id="option-d" name="quiz-options">
-                <label for="option-d" id="text_option_d"> Option D</label>
-            </li>
-        </ul>
-
-        <button id="submit">Submit</button>
-    </div>
-
-    <script src="script.js">
-    </script>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" required>
+        
+        <button type="submit">Submit</button>
+      </form>
+  
 </body>
 </html>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+  
