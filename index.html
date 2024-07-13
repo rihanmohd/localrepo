@@ -5,50 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-	
-<div class="calculator">
-	<input type="text" placeholder="0"
-	class="inputBox" readonly>
-  <div>
-	<button class="operator ac">AC</button>
-	<button class="operator del">DEL</button>
-	<button class="operator">%</button>
-	<button class="operator">/</button>
-  </div>
-  <Div>
-	<button>7</button>
-	<button>8</button>
-	<button>9</button>
-	<button class="operator">*</button>
-  </Div>
+    <div class="container">
 
+    <div class="form-box">
+        <h1 class="tittle">Sign Up</h1>
+        <div class="underlin"></div>
+        <form>
+            <div class="input-group">
 
-  <div>
-	<button>4</button>
-	<button>5</button>
-	<button>6</button>
-	<button class="operator">-</button>
-  </div>
+                <div class="input-field namefield">
+             <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
 
-  <div>
-	<button>1</button>
-	<button>2</button>
-	<button>3</button>
-	<button class="operator">+</button>
-  </div>
+                    
+                </div>
 
+                <div class="input-field emailfield">
+                    <i class="fa-solid fa-at"></i>
+                           <input type="email" placeholder="Email">
+                           
+                           
+                       </div>
+                       <div class="input-field passwordfield">
+                        <i class="fa-solid fa-key"></i>
+                               <input type="password" placeholder="password">
 
-  <div>
-	<button>00</button>
-	<button>0</button>
-	<button>.</button>
-	<button class="equalBtn">=</button>
-  </div>
-
-</div>
-<script src="script.js"></script>
+                           </div>     
+                           <p><span class="text">password suggestion </span>
+                        <a href="#">Click here</a></p>
+            </div>
+            <div class="btn-field">
+                <button class="signUpBtn" type="button">Sign Up</button>
+                <button class="disable
+                signInBtn" type="button">Sign In</button>
+            </div>
+        </form>
+    <script src="script.js" defer></script>
 </body>
 </html>
