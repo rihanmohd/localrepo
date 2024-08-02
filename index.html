@@ -3,107 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ======================== FAVICON =============================== -->
-     <link rel="shortcut icon" href="">
-
-     <!-- ============================== REMIX ICONS ================= -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-      <!-- =========================== CSS =========================== -->
-       <link rel="stylesheet" href="style.css">
     <title>Document</title>
-</head>
+   <!-- ===================== FAVICON ============================= -->
+    <link rel="shortcut icon" href="">
+
+    <!--  ========================= REMIXICONS ===================== -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+<!-- ==================== SWIPER CSS =================== -->
+ <link rel="stylesheet" href="swiper-bundle.min.css">
+
+ <!-- ========================== CSS ============================= -->
+  <link rel="stylesheet" href="style.css">
+    </head>
 <body>
+  <!--  ================= HEADER =======================  -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav--logo">CHIPS</a>
+        <div class="nav--menu" id="nav-menu">
+          <ul class="nav--list">
+            <li>
+              <a href="#home" class="nav--link  active-link">Home</a>
+            </li>
 
-    <!-- ===================================== HEADER ================================ -->
-     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav--logo">
-                <img src="logo.svg" alt="logo">
-            </a>
+            <li>
+              <a href="#favorites" class="nav--link  ">Favorites</a>
+            </li>
 
-            <div class="nav--menu" id="nav-menu">
-                <ul class="nav--list">
-                    <li class="nav--item">
-                        <a href="#" class="nav--link">Home</a>
-                    </li>
+            <li>
+              <a href="#cre" class="nav--link">Cre</a>
+            </li>
 
-                    <li class="nav--item">
-                        <a href="#" class="nav--link">Pricing</a>
-                    </li>
+            <li>
+              <a href="#products" class="nav--link">Products</a>
+            </li>
 
-                    <li class="nav--item">
-                        <a href="#" class="nav--link">Events</a>
-                    </li>
+            <li>
+              <a href="#contects" class="nav--link">Contact</a>
+            </li>
 
-                    <li class="nav--item">
-                        <a href="#" class="nav--link">Contact</a>
-                    </li>
-                </ul>
 
-                <div class="nav--buttons">
-                    <a href="#" class="nav--button-link">Login</a>
-                    <a href="#" class="nav--button-ghost">Get Started</a>
-                </div>
+          </ul>
 
-                <!-- Close button -->
-                 <div class="nav--close" id="nav-close">
-                    <i class="ri-close-large-fill"></i>
-                 </div>
+          <!--  Close Butoon -->
+            <div class="nav--close" id="nav-close">
+              <i class="ri-close-large-line"></i>
             </div>
 
-            <!-- Toggle button -->
-             <div class="nav--toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-             </div>
-        </nav>
-     </header>
+            <div class="nav--social">
+              <a href="https://www.facebook.com/" target="_blank" class="nav--social-link">
+                <i class="ri-facebook-circle-line"></i>
+              </a>
 
-     <!-- ================================= MAIN ======================================== -->
+              <a href="https://www.instagram.com/" target="_blank" class="nav--social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="https://www.twitter.com/" target="_blank" class="nav--social-link">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+            </div>
+        </div>
+
+        <div class="nav--toggle" id="nav-toggle">
+          <i class="ri-apps-2-line"></i>
+        </div>
+      </nav>
+    </header>
+    <!--  ================== MAIN =========================== -->
       <main class="main">
-        <!-- ============================= HOME ===================================== -->
-         <section class="home">
-              <div class="home--container container">
-               <div class="home--content">
-                <div class="home--data">
-                    <h3 class="home--subtittle">
-                        A LIFETIME EXPERIENCE
-                    </h3>
 
-                    <h1 class="home--tittle">
-                        Camping Events <br>
-                        To Remember
-                    </h1>
+      
+      <!--  ============================ HOME ===========================  -->
+      <section class="home section" id="home">
+        <div class="home--container container grid">
+          <div class="home--data">
+            <h1 class="home--tittle">SHACK <br> WITH NO <br> LIMITS</h1>
 
-                    <p class="home--description">
-                        Camp anywhere anytime without hassle and enjoy.
-                    </p>
+            <p class="home--description">
+              When you are hungry and don't have time <br>
+               to cook, snacks are the prefect solution  ,
+               always prepare for midday hunger.
 
-                    <a href="#" class="home--button">
-                        Explore Locations
-                    </a>
-                </div>
+            </p>
 
-                <img src="bird-1.svg" alt="image" class="home--bird-1">
-                <img src="bird-2.svg" alt="image" class="home--bird-2">
-               </div>
+            <img src="meat.png" alt="image" class="home--meat">
 
-               <div class="home--images">
-                <img src="img-4.svg" alt="image" class="home--img-4">
-                <img src="img-3.svg" alt="image" class="home--img-3">
-                <img src="img-2.svg" alt="image" class="home--img-1">
-                <img src="img-1.svg" alt="image" class="home--img-4">
-               </div>
+            <div class="home--buttons">
+              <a href="#" class="buttun">Snack Now</a>
+              <a href="#" class="buttun buttun--ghost">Buy Now</a>
+            </div>
+          </div>
+          <div class="home--images">
+              <div class="home--circle">
+                <div class="home--subcircle"></div>
               </div>
+
+              <img src="home-chips.png" alt="image" class="home--img">
+
+              <img src="chips-1.png" alt="image" class="home--chips-1">
+              <img src="chips-2.png" alt="image" class="home--chips-2">
+              <img src="chips-3.png" alt="image" class="home--chips-3">
+              <img src="tomato-1.png" alt="image" class="home--tomato-1">
+              <img src="tomato-2.png" alt="image" class="home--tomato-2">
+              <img src="leaf-3.png" alt="image" class="home--leaf">
+          </div>
+        </div>
+      </section>
+
+      <!--  =============================== FAVORITES ============================  -->
+        <section class="favorite section" id="favorites">
+          <div class="favorites--container container grid">
+            <div class="favorites--data">
+              <h2 class="section--tittle">DISCOVER YOUR <BR> FAVORITE FLAVORS</h2>
+                <p class="favorites--description">
+                  Try some exotic flavors or delicious
+                  toopings. We have collected some delicious 
+                  snack recipes from around the world for you.
+                </p>
+
+                <img src="cheese.png" alt="image" class="favorites--chese-1">
+                <img src="cheese.png" alt="image" class="favorites--chese-2">
+            </div>
+
+
+            <div class="favorites--swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="favorites--article swiper-slide">
+                  <img src="favorite-chips-2.png" alt="image" class="favorites--img">
+
+                  <img src="leaf-1.png" alt="image" class="favorites--leaf-1">
+                  <img src="leaf-2.png" alt="image" class="favorites--leaf-2">
+                </article>
+
+
+                <article class="favorites--article swiper-slide">
+                  <img src="favorite-chips-2.png" alt="image" class="favorites--img">
+
+                  <img src="leaf-1.png" alt="image" class="favorites--leaf-1">
+                  <img src="leaf-2.png" alt="image" class="favorites--leaf-2">
+                </article>
+
+                <article class="favorites--article swiper-slide">
+                  <img src="favorite-chips-3.png" alt="image" class="favorites--img">
+
+                  <img src="leaf-1.png" alt="image" class="favorites--leaf-1">
+                  <img src="leaf-2.png" alt="image" class="favorites--leaf-2">
+                </article>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ======================= ==================== CARE ================================================= -->
+         <section class="care section" id="care">
+          <h2 class="section--tittle">ENJOY AND TAKE <BR> CARE OF YOUR HEALTH</h2>
+            <div class="care--container container grid">
+              <ul class="care--list">
+                <li class="care--item">
+                  <i class="ri-plant-line"></i>
+                  <p>
+                    The potatose that are made into
+                    snacks are grown and harvested and 
+                    are 100% organic.
+                  </p>
+                </li>
+
+                <li class="care--item">
+                  <i class="ri-fire-line"></i>
+                  <p>
+                    We fry the fries with vegetable and 
+                    natural oil for good care.
+                  </p>
+                </li>
+               
+                <li class="care--item">
+                  <i class="ri-heart-pulse-line"></i>
+                  <p>
+                    The potaose are not procesed, once
+                    cleaned they are cooked without 
+                    preservatives.
+                  </p>
+                </li>  
+
+
+                <li class="care--item">
+                <i class="ri-hand-heart-line"></i>
+
+                  <p>
+                    They contained fewer calories and less
+                    fat for good health.
+                  </p>
+                </li>
+              </ul>
+
+              <img src="care-chips.png" alt="image" class="care--img">
+            </div>
+
          </section>
-    </main>
 
-    <!-- ===================================== GSAP =================================== -->
-     <script src=""></script>
+         <!--        ===================================  BANNER ============================== -->
+                 <section class="banner">
+                  <div class="banner--container">
+                    <ul class="banner--list">
+                      <li class="banner--item">
+                        <i class="ri-leaf-line"></i>
+                        <span>GOOD FOR NATURE</span>
+                      </li>
+
+                      <li class="banner--item">
+                        <i class="ri-heart-pulse-line"></i>
+                        <span>LOW CALORIES</span>
+                      </li>
+   
+
+                    </ul>
+                  </div>
+                 </section>
 
 
-     <!-- ================================ ========= MAIN JS ====================-->
+                 <!-- ===================================== PRODUCTS ======================== -->
+                  <section class="products section" id="products">
+                    <h2 class="section--tittle">BEST SELLING <br> PRODUCTS</h2>
+
+                    <div class="products--container container">
+                      <div class="products--content grid">
+                        <article class="products--card">
+                          <img src="product-chips-1.png" alt="image" class="products--img">
+
+                          <span class="products--subtitte">Crab</span>
+                          <h2 class="products--tittle">Chips</h2>
+
+                          <span class="products--price">$8</span>
+
+                          <button class="products--button">
+                            <i class="ri-shopping-bag-3-line"></i>
+                          </button>
+                        </article>
+
+
+
+                        <article class="products--card">
+                          <img src="product-chips-2.png" alt="image" class="products--img">
+
+                          <span class="products--subtitte">Cheese</span>
+                          <h2 class="products--tittle">Chips</h2>
+
+                          <span class="products--price">$5</span>
+
+                          <button class="products--button">
+                            <i class="ri-shopping-bag-3-line"></i>
+                          </button>
+                        </article>
+
+                        <article class="products--card">
+                          <img src="product-chips-3.png" alt="image" class="products--img">
+
+                          <span class="products--subtitte">BBQ</span>
+                          <h2 class="products--tittle">Chips</h2>
+
+                          <span class="products--price">$6</span>
+
+                          <button class="products--button">
+                            <i class="ri-shopping-bag-3-line"></i>
+                          </button>
+                        </article>
+
+                        <article class="products--card">
+                          <img src="product-chips-4.png" alt="image" class="products--img">
+
+                          <span class="products--subtitte">Hot</span>
+                          <h2 class="products--tittle">Chips</h2>
+
+                          <span class="products--price">$5</span>
+
+                          <button class="products--button">
+                            <i class="ri-shopping-bag-3-line"></i>
+                          </button>
+                        </article>
+
+                        <article class="products--card">
+                          <img src="product-chips-5.png" alt="image" class="products--img">
+
+                          <span class="products--subtitte">Mix</span>
+                          <h2 class="products--tittle">Chips</h2>
+
+                          <span class="products--price">$10.</span>
+
+                          <button class="products--button">
+                            <i class="ri-shopping-bag-3-line"></i>
+                          </button>
+                        </article>
+
+                      </div>
+
+                      <img src="crab.png" alt="image" class="products--crab">
+                      <img src="hamburger.png" alt="image" class="products--hamburger">
+                      <img src="cheese.png" alt="image" class="products--cheese">
+
+
+                    </div>
+                  </section>
+                  <!-- ================================ CONTACT ====================== -->
+                   <section class="contact--section" id="contact">
+                    <div class="contact--container container">
+                      <h2 class="section--tittle">CONTACT US TO <br> EAT CHIPS</h2>
+
+
+
+                      <div class="contact--content grid">
+                        <div class="contact--data grid">
+                           <div>
+                            <h3 class="contact--tittle">Write to us</h3>
+
+                            <div class="contact--social">
+                              <a href="https://api.whatsapp.com" target="_blank">
+                                <i class="ri-whatsapp-fill"></i>
+                              </a>
+
+                              <a href="https://m.messe.com" target="_blank">
+                                <i class="ri-messenger-fill"></i>
+                              </a>
+
+                              <a href="mailto:forlearningrihan@gmail.com" target="_blank">
+                                <i class="ri-mail-fill"></i>
+                              </a>
+                            </div>
+                           </div>
+
+                           <div>
+                            <h3 class="contact--tittle">Call us</h3>
+
+                            <address class="contact--info">
+                              +91 8267034167 <br>
+                              +91 8755759887
+                            </address>
+                           </div>
+
+                           <div>
+                            <h3 class="contact--tittle">Find us here</h3>
+
+                            <address class="contact--info">
+                              ARBIC MADARSA SAHARANPUR <BR>
+                                247001 U.P INDIA 
+                            </address>
+                           </div>
+                        </div>
+
+                        <img src="contact-man (1).png" alt="image" class="contact--img">
+                      </div>
+
+
+                      <img src="shrimp.png" alt="image" class="contact--shring">
+                      <img src="crab.png" alt="image" class="contact--crab">
+                      <img src="meat.png" alt="image" class="contact--meat">
+                    </div>
+                   </section>
+                   </main>
+
+
+                  <!-- ====================================  FOOTER ======================== -->
+                   <footer class="footer">
+                    <div class="footer--container container grid">
+                      <a href="#" class="footer--logo">CHIPS</a>
+
+                      <div class="footer--content grid">
+                        <a href="#" class="footer--link">Terms & Agreements</a>
+                        <a href="#" class="footer--link">Privacy Policy</a>
+
+                        <span class="footer--copy">
+                          #1234; All Rights Reserved By Mycode
+                        </span>
+                      </div>
+                    </div>
+                   </footer>
+
+
+                   <!-- =======================  SCROLL UP ============================ -->
+
+                   <a href="" class="scrollup" id="scroll-up">
+                    <i class="ri-arrow-up-line"></i>
+                   </a>
+
+                   <!-- =========================== SCROLL REVEAL ====================== -->
+                    <script src="scrollreveal.min.js"></script>
+
+                    <!-- =================== SWIPER JS ====================== -->
+                    <script src="swiper-bundle.min.js"></script>
+    <!--  ==================== MAIN JS ================== -->
       <script src="script.js"></script>
-    
+
+      <!-- /======================  SWIPER JS ==========================// -->
+      <script src="swiper-bundle.min.js"></script>
 </body>
 </html>
