@@ -3,46 +3,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="C:\Users\hp\Desktop\Responsive Webs\imgs">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
 </head>
 <body>
-    <div class="container">
-
-    <div class="form-box">
-        <h1 class="tittle">Sign Up</h1>
-        <div class="underlin"></div>
-        <form>
-            <div class="input-group">
-
-                <div class="input-field namefield">
-             <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Name">
-
-                    
+    <!-- ===================== HEADER========================= -->
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav--logo">
+                <div>
+                    <img src="favicon.png" alt="image">
                 </div>
 
-                <div class="input-field emailfield">
-                    <i class="fa-solid fa-at"></i>
-                           <input type="email" placeholder="Email">
-                           
-                           
-                       </div>
-                       <div class="input-field passwordfield">
-                        <i class="fa-solid fa-key"></i>
-                               <input type="password" placeholder="password">
+                  Burger
+                </a>
 
-                           </div>     
-                           <p><span class="text">password suggestion </span>
-                        <a href="#">Click here</a></p>
+            <div class="nav--menu" id="nav-menu">
+                <ul class="nav--list">
+                    
+                   
+                    
+  
+  <br>
+  <li>
+    <a href="#home" class="nav--link active-link">Home</a>
+  </li>
+
+
+
+                   <li>
+                        <a href="#recipe" class="nav--link">Recipe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#popular" class="nav--link">Popular</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#delivery" class="nav--link">Delivery</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contact" class="nav--link">Contact</a>
+                    </li>
+                    
+                    
+                </ul>
+                <!-- Close button -->
+                 <div class="nav--close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                 </div>
             </div>
-            <div class="btn-field">
-                <button class="signUpBtn" type="button">Sign Up</button>
-                <button class="disable
-                signInBtn" type="button">Sign In</button>
-            </div>
-        </form>
-    <script src="script.js" defer></script>
-</body>
+
+            <!-- Toggle button -->
+             <div class="nav--toggle" id="nav-toggle">
+                <i class="ri-apps-2-fill"></i>
+             </div>
+        </nav>
+     </header>
+
+          <!-- =========================== MAIN ==================================== -->
+<main class="main">
+
+<!-- ================ home ============= -->
+ <section class="home section" id="home">
+    <div class="home--container container grid">
+        <div class="home--data">
+            <h1 class="home--tittle"> LOVE EVERY <br> Burger </h1>
+            <p class="home--description">
+                We serve the best bueger on the planet,
+                <br>
+                paving the way for cooking and 
+                <br>
+                preparin hot, delicious
+                 burgers.
+            </p>
+
+            <a href="#popular" class="button">Bite Now</a>
+            <img src="sticker-potatoes.svg" alt="image" class="home--sticker">
+        </div>
+
+        <div class="home--imeges">
+            <img src="popular-burger-big.png" alt="image" class="home--burger">
+            <img src="home-dish.png" alt="image" class="home--dish">
+            
+
+            <!-- <img src="home-potato.png" alt="image" class="home--ingrident home--potato-1">
+            <img src="home-potato.png" alt="image" class="home--ingrident home--potato-2">
+            <img src="home-tomato.png" alt="image" class="home--ingrident home--tomato-1">
+            <img src="home-tomato.png" alt="image" class="home--ingrident home--lettuce-1">
+            <img src="home-lettuce.png" alt="image" class="home--ingrident home--lettuce-2">
+ -->
+
+        </div>
+    </div>
+ </section>
+
+
+ <!-- =============== recipe ============== -->
+ <section class="recipe section" id="recipe">
+  <h2 class="section--tittle">Our Secret Recipe</h2>
+  <div class="recipe--container container grid">
+    <div class="recipe--image">
+        <img src="recipe-burger.png" alt="image" class="recipe--img">
+    </div>
+  <div class="recipe--data">
+    <div class="recipe--card">
+        <div class="recipe--box">
+            <img src="recipe-bread.png" alt="image">
+
+        </div>
+        <div>
+            <h3 class="recipe--tittle">Brad</h3>
+            <p class="recipe--discription">Fresh bread, baked to perfection</p>
+        </div>
+    </div>
+
+    
+    <div class="recipe--card">
+        <div class="recipe--box">
+            <img src="recipe-meat.png" alt="image">
+
+        </div>
+        <div>
+            <h3 class="recipe--tittle">Cheese</h3>
+            <p class="recipe--discription">Cheese for a fantastic and healthy future.</p>
+        </div>
+    </div>
+
+    
+    <div class="recipe--card">
+        <div class="recipe--box">
+            <img src="recipe-cheese.png" alt="image">
+  </div>
+
+  <div>
+    <h3 class="recipe--tittle">Vegetables</h3>
+    <p class="recipe--discription">Vegetables full of the essence of nuture.</p>
+</div>
+
+
+
+<div class="recipe--card">
+    <div class="recipe--box">
+        <img src="recipe-vegetable.png" alt="image">
+</div>
+
+<div>
+<h3 class="recipe--tittle">Sauces</h3>
+<p class="recipe--discription">Fresh sauces, delicious for the palate..</p>
+</div>
+
+<div class="recipe--card">
+    <div class="recipe--box">
+        <img src="recipe-sauces.png" alt="image">
+</div>
+
+<div>
+<h3 class="recipe--tittle">Meat</h3>
+<p class="recipe--discription">100% pure beef, big and meaty.</p>
+</div>
+
+
+
+<div class="recipe--card">
+    <div class="recipe--box">
+        <img src="recipe-meat.png" alt="image">
+</div>
+
+<!-- <div>
+<h3 class="recipe--tittle"></h3>
+<p class="recipe--discription">Vegetables full of the essence of nuture.</p>
+</div> -->
+
+
+  </div>
+ </section>
+ <!-- ================== popular ============== -->
+ <section class="popular section" id="popular">
+ <h1 class="section--tittle">Most Devoured <br> Burger</h1>
+
+ <div class="populer--container container grid">
+    <article class="popular--card">
+        <img src="popular-burger-chicken.png" alt="image" class="popular--img">
+       
+        <h2 class="popular--tittle">Chicken <br> Burger</h2>
+        <span class="popular--price">$6</span>
+
+        <button class="popular--button">
+        <i class="ri-shopping-bag-3-fill"></i>
+        </button>
+    </article>
+
+    <article class="popular--card">
+        <img src="popular-burger-chicken.png" alt="image" class="popular--img">
+       
+        <h2 class="popular--tittle">Meat <br> Burger</h2>
+        <span class="popular--price">$10</span>
+
+        <button class="popular--button">
+        <i class="ri-shopping-bag-3-fill"></i>
+        </button>
+    </article>
+
+    <article class="popular--card">
+        <img src="recipe-meat.png" alt="image" class="popular--img">
+       
+        <h2 class="popular--tittle">Grill <br> Burger</h2>
+        <span class="popular--price">$12</span>
+
+        <button class="popular--button">
+        <i class="ri-shopping-bag-3-fill"></i>
+        </button>
+    </article>
+
+    <article class="popular--card">
+        <img src="popular-burger-grill.png" alt="image" class="popular--img">
+       
+        <h2 class="popular--tittle">Classic <br> Burger</h2>
+        <span class="popular--price">$8</span>
+
+        <button class="popular--button">
+        <i class="ri-shopping-bag-3-fill"></i>
+        </button>
+    </article>
+
+    <article class="popular--card">
+        <img src="popular-burger-classic.png" alt="image" class="popular--img">
+       
+        <h2 class="popular--tittle">Big <br> Burger</h2>
+        <span class="popular--price">$15</span>
+
+        <button class="popular--button">
+        <i class="ri-shopping-bag-3-fill"></i>
+        </button>
+    </article>
+
+    <article class="popular--card">
+        <img src="popular-burger-big.png" alt="image" class="popular--img">
+       
+        <h2 class="popular--tittle"></h2>
+        <span class="popular--price"></span>
+
+        <!-- <button class="popular--button">
+        <i class="ri-shopping-bag-3-fill"></i>
+        </button> -->
+    </article>
+ </div>
+ </section>
+
+ <!-- ====================== dilivery ============ -->
+ <section class="delivery section" id="delivery">
+    <div class="delivery--container container grid">
+        <div class="delivery--data">
+            <h2 class="section--tittle">Fast Delivery</h2>
+
+
+            <p class="delivery--description">Place your order for your favorite burger 
+                and we will deliver it to your door in minuets,
+                get in touch and dont leave hungry.
+            </p>
+
+            <a href="#contact" class="button">Contact Now</a>
+
+            <img src="sticker-burger.svg" alt="image" class="delivery--sticker">
+        </div>
+
+        <img src="delivery-burger.png" alt="image" class="delivery--img">
+    </div>
+ </section>
+
+
+ <!-- ================= contact =============== -->
+
+ <section class="contact section" id="contact">
+  <div class="contact--container container grid">
+    <h2 class="section--tittle">Contact Now</h2>
+
+    <div class="contact--content grid">
+        <div class="contact--data grid">
+    <div> 
+        <h3 class="contact--tittle">Write Us</h3>
+        <div class="contact--social">
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <i class="ri-whatsapp-line"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="ri-facebook-circle-fill"></i>
+            </a>
+
+
+
+            <a href="https://telegram.org/" target="_blank">
+                <i class="ri-telegram-fill"></i>
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="contact--tittle">Call Us and Order</h3>
+
+        <address class="contact--info">
+            +91 8267034167 <br>
+            +91 8755759887
+
+        </address>
+    </div>
+
+
+    <div>
+        <h3 class="contact--tittle">Find Us here</h3>
+
+        <address class="contact--info">
+       Saharanpur- Bus Stand <br>
+       UP. 247231
+        </address>
+    </div>
+
+        </div>
+
+        <div class="contact--image">
+        <img src="contact-man.png" alt="image" class="contact--image">
+        </div>
+    </div>
+      
+
+    <img src="sticker-burger.svg" alt="image" class="contact--sticker-1">
+    <img src="sticker-soda.svg" alt="image" class="contact--sticker-2">
+  </div>
+ </section>
+
+
+ </main>
+<!-- ============= Footer =========== -->
+<footer class="footer">
+  <div class="footer--container container grid">
+    <a href="#" class="footer--logo">Burger</a>
+
+    <div class="footer--content grid">
+        <a href="#" class="footer--link">Terms & Agreements</a>
+        <a href="#" class="footer--link">Privacy Policy</a>
+
+
+        <div class="footer--social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="ri-facebook-circle-fill"></i>
+            </a>
+
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                <i class="ri-instagram-fill"></i>
+            </a>
+
+            <a href="https://x.com/?lang=en" target="_blank">
+                <i class="ri-twitter-x-line"></i>
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+  <span class="footer--copy">
+    All Rights Reserved By Bedimcode
+  </span>
+</footer>
+
+<!--  ============== scrol up ======= -->
+<a href="" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+</a>
+
+<!-- ==================  SCROLL REVEAL =================== -->
+ <script src="scrollreveal.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+    </body>
 </html>
