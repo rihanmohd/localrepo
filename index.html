@@ -3,391 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-    <link rel="stylesheet" href="C:\Users\hp\Desktop\Responsive Webs\imgs">
-    <link rel="stylesheet" href="style.css">
-
-
+    <title>cacus web</title>
+<!-- ========================== REMIXICONS ========================================= -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!-- ======================================== CSS ================================ -->
+            <link rel="stylesheet" href="cactus.css">
 </head>
 <body>
-    <!-- ===================== HEADER========================= -->
-     <header class="header" id="header">
+
+    <!-- ================= HEDEAR ======================= -->
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav--logo">
-                <div>
-                    <img src="favicon.png" alt="image">
-                </div>
-
-                  Burger
-                </a>
+            <i class="ri-cactus-line"></i> Cactus
+            </a>
 
             <div class="nav--menu" id="nav-menu">
                 <ul class="nav--list">
-                    
-                   
-                    
-  
-  <br>
-  <li>
-    <a href="#home" class="nav--link active-link">Home</a>
-  </li>
-
-
-
-                   <li>
-                        <a href="#recipe" class="nav--link">Recipe</a>
+                    <li class="nav--item">
+                        <a href="#home" class="nav--link active-link">Home</a>
                     </li>
-                    
-                    <li>
-                        <a href="#popular" class="nav--link">Popular</a>
+
+                    <li class="nav--item">
+                        <a href="#new" class="nav--link">News</a>
                     </li>
-                    
-                    <li>
-                        <a href="#delivery" class="nav--link">Delivery</a>
+
+                    <li class="nav--item">
+                        <a href="#shop" class="nav--link">Shop</a>
                     </li>
-                    
-                    <li>
+
+                    <li class="nav--item">
+                        <a href="#care" class="nav--link">Care</a>
+                    </li>
+
+                    <li class="nav--item">
                         <a href="#contact" class="nav--link">Contact</a>
                     </li>
-                    
-                    
                 </ul>
-                <!-- Close button -->
+
+                <!-- Close button  -->
                  <div class="nav--close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
+                    <i class="ri-close-line"></i>
                  </div>
             </div>
 
-            <!-- Toggle button -->
-             <div class="nav--toggle" id="nav-toggle">
-                <i class="ri-apps-2-fill"></i>
-             </div>
+            <div class="nav--actions">
+                <i class="ri-user-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+
+                <!-- Toggle button  -->
+                 <div class="nav--toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                 </div>
+            </div>
         </nav>
-     </header>
+    </header>
+    <!-- ====================== MAIN ==================== -->
+     <main class="main">
+        <!-- ==================== HOME ==================== -->
+         <section class="home section" id="home">
+          <div class="home--container container grid">
+            <img src="home-cactus.png" alt="image" class="home--img">
 
-          <!-- =========================== MAIN ==================================== -->
-<main class="main">
+            <div class="home--data">
+                <h1 class="home--tittle">
+                    ORNAMENTAL <br> 
+                    <span>PLANTS</span> FOR  <br>
+                    YOUR HOME <br>
+                </h1>
 
-<!-- ================ home ============= -->
- <section class="home section" id="home">
-    <div class="home--container container grid">
-        <div class="home--data">
-            <h1 class="home--tittle"> LOVE EVERY <br> Burger </h1>
-            <p class="home--description">
-                We serve the best bueger on the planet,
-                <br>
-                paving the way for cooking and 
-                <br>
-                preparin hot, delicious
-                 burgers.
-            </p>
+                <p class="home--description">
+                    We desigin ornamental plants for your 
+                    <br>
+                    home in-house for an orginal style and <br>
+                    quality you won't find anywhere else.
+                </p>
 
-            <a href="#popular" class="button">Bite Now</a>
-            <img src="sticker-potatoes.svg" alt="image" class="home--sticker">
+                <div class="home--buttons">
+                    <a href="#" class="button">
+                        <span>
+                            <i class="ri-arrow-right-line"></i>
+                        </span>
+                        GO TO SHOP
+                    </a>
+
+                    <a href="#" class="button--link">
+                        MORE DETAILES
+                    </a>
+                </div>
+            </div>
+          </div>
+         </section>
+
+         <!-- ======================  NEWS ==================== -->
+          <section class="new section" id="new">
+            <div class="new--container container grid">
+                <div class="new--data">
+                    <h2 class="section--tittle">
+                        NEW PLANTS FOR <br> YOUR HOME
+                    </h2>
+
+                    <p class="new--description">
+                        Select new ornamental plants for home 
+                        decoration and obtain an atmosphere of 
+                        hermony and freshness.
+
+                    </p>
+                </div>
+
+                <div class="new--content grid">
+                    <article class="new--card">
+                        <img src="new-cactus-1.png" alt="image" class="new--img">
+                        <h2 class="new--tittle">Gymnocalycium Cactus</h2>
+                    </article>
+
+
+                <article class="new--card">
+                        <img src="new-cactus-2.png" alt="image" class="new--img">
+                        <h2 class="new--tittle">Lily pad Succulent</h2>
+                    </article>
+
+
+                    <article class="new--card">
+                        <img src="new-cactus-3.png" alt="image" class="new--img">
+                        <h2 class="new--tittle">Rebutia Cactus</h2>
+                    </article>
+            </div>
+          </section>
+
+          <!-- ================================ SHOP ===================== -->
+           <section class="shop section" id="shop">
+            <h2 class="section--tittle">
+                THE BEST PLANTS
+            </h2>
+
+            <div class="shop--container container grid">
+                <article class="shop--card">
+                    <img src="shop-cactus-1.png" alt="image" class="shop--img">
+
+                    <h3 class="shop--tittle">Gymnocalycium <br> Cactus</h3>
+                    <span class="shop--price">&15</span>
+
+                    <button class="shop--button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+
+                <article class="shop--card">
+                    <img src="shop-cactus-2.png" alt="image" class="shop--img">
+
+                    <h3 class="shop--tittle">Echeveria <br> Succulent</h3>
+                    <span class="shop--price">$10</span>
+
+                    <button class="shop--button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+
+
+                <article class="shop--card">
+                    <img src="shop-cactus-3.png" alt="image" class="shop--img">
+
+                    <h3 class="shop--tittle">Ferocactus <br> Cactus</h3>
+                    <span class="shop--price">$15</span>
+
+                    <button class="shop--button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+
+
+                <article class="shop--card">
+                    <img src="shop-cactus-4.png" alt="image" class="shop--img">
+
+                    <h3 class="shop--tittle">Key Lime Pie <br> Succulant</h3>
+                    <span class="shop--price">$10</span>
+
+                    <button class="shop--button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+
+
+                <article class="shop--card">
+                    <img src="shop-cactus-5.png" alt="image" class="shop--img">
+
+                    <h3 class="shop--tittle">Melocactus <br> Cactus</h3>
+                    <span class="shop--price">$15</span>
+
+                    <button class="shop--button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+            </div>
+           </section>
+
+           <!-- =========================== CARE ===================== -->
+            <section class="care section " id="care">
+           <h2 class="section--tittle">
+            CARE AND HEALTH FOR <BR> TOUR CACTUS
+           </h2>
+           <div class="care--container container grid">
+            <img src="care-cactus.png" alt="image" class="care--img">
+
+            <ul class="care--list">
+                <li class="care--item">
+                    <i class="ri-checkbox-fill"></i>
+                    <p>
+                  In cold times, add water once a month
+                  and during the summer do it when the 
+                  soil is very dry.
+                    </p>
+                </li>
+
+                <li class="care--item">
+                    <i class="ri-checkbox-fill"></i>
+                    <p>
+                       Have good drainage so that the cactus 
+                       does not accumlate water. 
+                    </p>
+                </li>
+
+                <li class="care--item">
+                    <i class="ri-checkbox-fill"></i>
+                    <p>
+                        Place your cactus or succulant in a
+                        lacation with indirect light.
+                    </p>
+                </li>
+
+                <li class="care--item">
+                    <i class="ri-checkbox-fill"></i>
+                    <p>
+                        Do not water more than necessary, as
+                        it can accumlate too mutch water and 
+                        the plant will rot.
+                    </p>
+                </li>
+
+                <li class="care--item">
+                    <i class="ri-checkbox-fill"></i>
+                    <p>
+                        Do not expose to high temperatures, as
+                        succulant plants are not fans of
+                        extremes.
+                    </p>
+                </li>
+            </ul>
+           </div>
+            </section>
+
+            <!-- ================================== CANTACT====================== -->
+
+            <section class="contact section" id="contact">
+               <h2 class="section--tittle">
+                YOU WANT A CACTUS <br> CONTACT US 
+               </h2>
+
+               <div class="contact--container container grid">
+                <img src="contact-cactus.png" alt="image" class="contact--img">
+
+
+                <div class="contact--content">
+                    <div>
+                       <h3 class="contact--tittle">
+                        Write to us
+                       </h3>
+                       <div class="contact--social">
+                        <a href="https://whatsapp.com" target="_blank">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+
+                        <a href="https://insta.com" target="_blank">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                       </div>
+                    </div>
+
+                    <div>
+                <h3 class="contact--tittle">call us at the numbers</h3>
+
+                <address class="contact--info">
+                    +91 8267034167 <br>
+                    +91 8650133454                </address>
+                    </div>
+
+                    <div>
+                        <h3 class="contact--tittle">Find us here</h3>
+        
+                        <address class="contact--info">
+
+                            ARBIC MADARSA #247001 <br>
+                            SAHARANPUR
+                        </address>
+                            </div>
+                </div>
+               </div>
+            </section>
+     </main>
+
+     <!-- ========================= FOOTER ======================= -->
+      <footer class="footer">
+        <div class="footer--container container grid">
+            <div>
+                <a href="#" class="footer--logo">
+                    <i class="ri-cactus-line"></i> Cactus
+                </a>
+
+                <p class="footer--description">
+                    Choose the best <br> plants for your hme.
+                </p>
+            </div>
+            <div class="footer--content grid">
+                <div>
+                    <h3 class="footer--tittle">COMPANY</h3>
+
+                    <ul class="footer--links">
+                        <li>
+                            <a href="#" class="footer--link">About us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer--link">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer--link">Features</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h3 class="footer--tittle">INFORMATION</h3>
+
+                    <ul class="footer--links">
+                        <li>
+                            <a href="#" class="footer--link">Blogs & News</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer--link">Contact us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer--link">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h3 class="footer--tittle">SOCAL MEDIA</h3>
+
+                    <div class="footer--social">
+                        <a href="" target="_blank"  class="footer--social-link">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+
+                        <a href="" target="_blank"  class="footer--social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                        <a href="" target="_blank"  class="footer--social-link">
+                            <i class="ri-messenger-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="home--imeges">
-            <img src="popular-burger-big.png" alt="image" class="home--burger">
-            <img src="home-dish.png" alt="image" class="home--dish">
-            
-
-            <!-- <img src="home-potato.png" alt="image" class="home--ingrident home--potato-1">
-            <img src="home-potato.png" alt="image" class="home--ingrident home--potato-2">
-            <img src="home-tomato.png" alt="image" class="home--ingrident home--tomato-1">
-            <img src="home-tomato.png" alt="image" class="home--ingrident home--lettuce-1">
-            <img src="home-lettuce.png" alt="image" class="home--ingrident home--lettuce-2">
- -->
-
-        </div>
-    </div>
- </section>
-
-
- <!-- =============== recipe ============== -->
- <section class="recipe section" id="recipe">
-  <h2 class="section--tittle">Our Secret Recipe</h2>
-  <div class="recipe--container container grid">
-    <div class="recipe--image">
-        <img src="recipe-burger.png" alt="image" class="recipe--img">
-    </div>
-  <div class="recipe--data">
-    <div class="recipe--card">
-        <div class="recipe--box">
-            <img src="recipe-bread.png" alt="image">
-
-        </div>
-        <div>
-            <h3 class="recipe--tittle">Brad</h3>
-            <p class="recipe--discription">Fresh bread, baked to perfection</p>
-        </div>
-    </div>
-
-    
-    <div class="recipe--card">
-        <div class="recipe--box">
-            <img src="recipe-meat.png" alt="image">
-
-        </div>
-        <div>
-            <h3 class="recipe--tittle">Cheese</h3>
-            <p class="recipe--discription">Cheese for a fantastic and healthy future.</p>
-        </div>
-    </div>
-
-    
-    <div class="recipe--card">
-        <div class="recipe--box">
-            <img src="recipe-cheese.png" alt="image">
-  </div>
-
-  <div>
-    <h3 class="recipe--tittle">Vegetables</h3>
-    <p class="recipe--discription">Vegetables full of the essence of nuture.</p>
-</div>
-
-
-
-<div class="recipe--card">
-    <div class="recipe--box">
-        <img src="recipe-vegetable.png" alt="image">
-</div>
-
-<div>
-<h3 class="recipe--tittle">Sauces</h3>
-<p class="recipe--discription">Fresh sauces, delicious for the palate..</p>
-</div>
-
-<div class="recipe--card">
-    <div class="recipe--box">
-        <img src="recipe-sauces.png" alt="image">
-</div>
-
-<div>
-<h3 class="recipe--tittle">Meat</h3>
-<p class="recipe--discription">100% pure beef, big and meaty.</p>
-</div>
-
-
-
-<div class="recipe--card">
-    <div class="recipe--box">
-        <img src="recipe-meat.png" alt="image">
-</div>
-
-<!-- <div>
-<h3 class="recipe--tittle"></h3>
-<p class="recipe--discription">Vegetables full of the essence of nuture.</p>
-</div> -->
-
-
-  </div>
- </section>
- <!-- ================== popular ============== -->
- <section class="popular section" id="popular">
- <h1 class="section--tittle">Most Devoured <br> Burger</h1>
-
- <div class="populer--container container grid">
-    <article class="popular--card">
-        <img src="popular-burger-chicken.png" alt="image" class="popular--img">
-       
-        <h2 class="popular--tittle">Chicken <br> Burger</h2>
-        <span class="popular--price">$6</span>
-
-        <button class="popular--button">
-        <i class="ri-shopping-bag-3-fill"></i>
-        </button>
-    </article>
-
-    <article class="popular--card">
-        <img src="popular-burger-chicken.png" alt="image" class="popular--img">
-       
-        <h2 class="popular--tittle">Meat <br> Burger</h2>
-        <span class="popular--price">$10</span>
-
-        <button class="popular--button">
-        <i class="ri-shopping-bag-3-fill"></i>
-        </button>
-    </article>
-
-    <article class="popular--card">
-        <img src="recipe-meat.png" alt="image" class="popular--img">
-       
-        <h2 class="popular--tittle">Grill <br> Burger</h2>
-        <span class="popular--price">$12</span>
-
-        <button class="popular--button">
-        <i class="ri-shopping-bag-3-fill"></i>
-        </button>
-    </article>
-
-    <article class="popular--card">
-        <img src="popular-burger-grill.png" alt="image" class="popular--img">
-       
-        <h2 class="popular--tittle">Classic <br> Burger</h2>
-        <span class="popular--price">$8</span>
-
-        <button class="popular--button">
-        <i class="ri-shopping-bag-3-fill"></i>
-        </button>
-    </article>
-
-    <article class="popular--card">
-        <img src="popular-burger-classic.png" alt="image" class="popular--img">
-       
-        <h2 class="popular--tittle">Big <br> Burger</h2>
-        <span class="popular--price">$15</span>
-
-        <button class="popular--button">
-        <i class="ri-shopping-bag-3-fill"></i>
-        </button>
-    </article>
-
-    <article class="popular--card">
-        <img src="popular-burger-big.png" alt="image" class="popular--img">
-       
-        <h2 class="popular--tittle"></h2>
-        <span class="popular--price"></span>
-
-        <!-- <button class="popular--button">
-        <i class="ri-shopping-bag-3-fill"></i>
-        </button> -->
-    </article>
- </div>
- </section>
-
- <!-- ====================== dilivery ============ -->
- <section class="delivery section" id="delivery">
-    <div class="delivery--container container grid">
-        <div class="delivery--data">
-            <h2 class="section--tittle">Fast Delivery</h2>
-
-
-            <p class="delivery--description">Place your order for your favorite burger 
-                and we will deliver it to your door in minuets,
-                get in touch and dont leave hungry.
-            </p>
-
-            <a href="#contact" class="button">Contact Now</a>
-
-            <img src="sticker-burger.svg" alt="image" class="delivery--sticker">
-        </div>
-
-        <img src="delivery-burger.png" alt="image" class="delivery--img">
-    </div>
- </section>
-
-
- <!-- ================= contact =============== -->
-
- <section class="contact section" id="contact">
-  <div class="contact--container container grid">
-    <h2 class="section--tittle">Contact Now</h2>
-
-    <div class="contact--content grid">
-        <div class="contact--data grid">
-    <div> 
-        <h3 class="contact--tittle">Write Us</h3>
-        <div class="contact--social">
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <i class="ri-whatsapp-line"></i>
-            </a>
-
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="ri-facebook-circle-fill"></i>
-            </a>
-
-
-
-            <a href="https://telegram.org/" target="_blank">
-                <i class="ri-telegram-fill"></i>
-            </a>
-        </div>
-    </div>
-
-    <div>
-        <h3 class="contact--tittle">Call Us and Order</h3>
-
-        <address class="contact--info">
-            +91 8267034167 <br>
-            +91 8755759887
-
-        </address>
-    </div>
-
-
-    <div>
-        <h3 class="contact--tittle">Find Us here</h3>
-
-        <address class="contact--info">
-       Saharanpur- Bus Stand <br>
-       UP. 247231
-        </address>
-    </div>
-
-        </div>
-
-        <div class="contact--image">
-        <img src="contact-man.png" alt="image" class="contact--image">
-        </div>
-    </div>
-      
-
-    <img src="sticker-burger.svg" alt="image" class="contact--sticker-1">
-    <img src="sticker-soda.svg" alt="image" class="contact--sticker-2">
-  </div>
- </section>
-
-
- </main>
-<!-- ============= Footer =========== -->
-<footer class="footer">
-  <div class="footer--container container grid">
-    <a href="#" class="footer--logo">Burger</a>
-
-    <div class="footer--content grid">
-        <a href="#" class="footer--link">Terms & Agreements</a>
-        <a href="#" class="footer--link">Privacy Policy</a>
-
-
-        <div class="footer--social">
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="ri-facebook-circle-fill"></i>
-            </a>
-
-            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                <i class="ri-instagram-fill"></i>
-            </a>
-
-            <a href="https://x.com/?lang=en" target="_blank">
-                <i class="ri-twitter-x-line"></i>
-            </a>
-        </div>
-    </div>
-  </div>
-
-
-  <span class="footer--copy">
-    All Rights Reserved By Bedimcode
-  </span>
-</footer>
-
-<!--  ============== scrol up ======= -->
-<a href="" class="scrollup" id="scroll-up">
-    <i class="ri-arrow-up-line"></i>
-</a>
-
-<!-- ==================  SCROLL REVEAL =================== -->
- <script src="scrollreveal.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-  <script src="script.js"></script>
-    </body>
+        <span class="footer--cop y">
+            All Rights Reserved By MyCode.
+        </span>
+      </footer>
+
+      <!-- ========================== SCROLL UP ================== -->
+       <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+       </a>
+
+       <!-- ======================== SCROLLREVEAL =================== -->
+        <script src="scrollreveal.min.js"></script>
+    <!-- ================= MAIN JS ========================-->
+     <script src="cactus.js"></script>
+</body>
 </html>
